@@ -1,15 +1,29 @@
 body{
     margin: auto;
     width: 1440px;
-    height: 780px;
-    
+    height: 780px;    
+}
+.font{
     font-family: 'Montserrat', sans-serif;
     font-family: 'Pacifico', cursive;
-    
 }
+.no-underline {
+    text-decoration: none; 
+    color: white; 
+}
+
+.no-underline:hover {
+    color: #009900;
+}
+
+.no-underline:visited {
+    color: none;
+}
+
 header{
+    border: solid 1px black;
     color: white;
-    background-color: brown;
+    background-color: #990000;
     justify-content: space-between;
     align-items: baseline;
     display: flex;
@@ -22,16 +36,17 @@ header ul{
     gap: 20px;
 }
 /*BANNIERE*/
-.banniere{
+#banniere{
+    
     width: 100%;
     color: white;
 }
 
-.banniere img{
+#banniere img{
     width: 100%;
 }
 
-.banniere h2{
+#banniere h2{
     font-size: 110px;
     position: absolute;
     top: 27%; 
@@ -39,8 +54,8 @@ header ul{
     transform: translate(-50%, -50%);
 }
 
-.banniere button {
-    background-color: brown;
+#banniere button {
+    background-color: #990000;
     font-size: 52px;
     position: absolute;
     border-radius: 50px;
@@ -51,59 +66,74 @@ header ul{
     width: 50%;
 }
 /* NOTRE CARTE*/
-.carte{
-    color: green;
+
+
+#carte {
+    color: #009900;
     margin: auto;
     text-align: center;
 }
 
-.carte h3{
+#carte h3 {
     font-size: 40px;
 }
 
-.allCard{
+#carte .allCard {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.allCard .card{
+
+#carte .card {
     font-size: 40px;
-    
 }
 
-.allCard .card img{
+#carte .card img {
     width: auto;
     height: 250px;
 }
 
-.allCard .card ul{
+#carte .allCard .card ul {
     list-style: none;
     text-align: start;
     padding: 0;
     font-size: 30px;
+    color: black;
 }
 
-.allCard .card li{
+#carte .allCard .card li {
     padding: 5px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.card img:hover {
+    filter: brightness(50%);
+}
+
+
+
+
+
 
 /*SERVICE*/
-.service{
+#service{
     color: white;
     text-align: center;
-    background-color: brown;
+    background-color: #990000;
+    border: solid 1px black;
 }
-.service h3{
+#service h3{
     font-size: 40px;
 }
 
-.service .allService{
+#service .allService{
     display: flex;
     flex-wrap: wrap;
     row-gap: 30px;
     padding-bottom: 35px;
 }
-.service .card{
+#service .card{
     font-size: 28px;
     margin: auto;
     display: flex;
@@ -114,43 +144,49 @@ header ul{
     justify-content: center;
 }
 
-.service .card p{
+#service .card p{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 375px;
     height: 250px;
-    border: 1px solid black;
     justify-content: center;
-    background-color: rgb(90, 7, 7);
+    background-color: #5C0000;
 }
-.service .card img{
+#service .card img{
     width: auto;
     height: 250px;
     vertical-align: middle;
 }
 
+#service .allService .card:hover img, #service .allService .card:hover p {
+    transform: rotate(-20deg);
+    transition: transform 0.5s;
+}
+
+
 /*Contact*/
-.contact{
-    color: green;
+#contact{
+    color: #009900;
+    border: solid 1px black;
 
 }
-.contact h3{
+#contact h3{
     text-align: center;
     font-size: 40px;
 }
 
-.contact article{
+#contact article{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 55px;
 }
-.contact img{
+#contact img{
     width: 57%;
 }
 
-.contact .text{
+#contact .text{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -158,12 +194,22 @@ header ul{
     text-align: center;
 }
 
-.contact p{
+#contact p{
     display: flex;
     align-items: center;
 }
 
-.contact i {
-    color: blue;
+#contact i {
+    color: #33CBF5;
     padding: 40px;
+}
+
+/*footer*/
+
+footer{
+    background-color: #990000;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    border: solid 1px black;
 }

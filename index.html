@@ -15,13 +15,13 @@
 
 <body>
     <header>
-        <h2>San Pietro</h2>
+        <h2 class="font">San Pietro</h2>
         <nav>
             <ul>
-                <li><a href=""></a>Accueil</li>
-                <li><a href="carte"> Carte</a></li>
-                <li><a href="service"></a>Service</li>
-                <li><a href="contact"></a>Contact</li>
+                <li><a href="" class="no-underline">Accueil</a></li>
+                <li><a href="#carte" class="no-underline">Voir la carte</a></li>
+                <li><a href="#service" class="no-underline">Service</a></li>
+                <li><a href="#contact" class="no-underline">Contact</a></li>
             </ul>
         </nav>
 
@@ -29,46 +29,70 @@
 
 
     <main>
-        <section class="banniere">
+        <section id="banniere">
             <img src="./img/pizza-2810589_1920.jpg" alt="pizza">
-            <H2>San Pietro</H2>
-            <button><a href="contact">Nous Trouver</a></button>
+            <H2 class="font">San Pietro</H2>
+            <button><a href="contact" class="no-underline">Nous Trouver</a></button>
         </section>
-        <section class="carte">
-            <h3>Notre Carte</h3>
+
+        <section id="carte">
+            <h3 class="font">Notre Carte</h3>
             <div class="allCard">
                 <div class="card">
-                    <h4>Entrées</h4>
+                    <h4 class="font">Entrées</h4>
                     <img src="./img/bruschetta-4282898_1920.jpg" alt="bruschetta">
                     <ul>
-                        <li>Carpaccio de Bresaola</li>
-                        <li>Bruschetta italienne</li>
-                        <li>Antipasto a l'italienne</li>
+                        <li><span>Carpaccio de Bresaola</span>
+                            <span>8€</span>
+                        </li>
+                        <li>
+                            <span>Bruschetta italienne</span>
+                            <span>9€</span>
+                        </li>
+                        <li>
+                            <span>Antipasto a l'italienne</span>
+                            <span>10€</span>
+                        </li>
                     </ul>
                 </div>
                 <div class="card">
-                    <h4>Plats</h4>
+                    <h4 class="font">Plats</h4>
                     <img src="./img/osso-buco-2535546_1920.jpg" alt="osso">
                     <ul>
-                        <li>Pizza Napolitaine</li>
-                        <li>Osso Bucco</li>
-                        <li>Escalope Millanaise</li>
+                        <li>
+                            <span>Napolitaine</span>
+                            <span>12€</span /li>
+                        <li>
+                            <span>Osso Bucco</span>
+                            <span>14€</span>
+                        </li>
+                        <li><span>Escalope Millanaise</span>
+                            <span>16€</span>
+                        </li>
                     </ul>
                 </div>
                 <div class="card">
-                    <h4>Déssert</h4>
+                    <h4 class="font">Déssert</h4>
                     <img src="./img/tiramisu-4098241_1920.jpg" alt="Tiramisu">
                     <ul>
-                        <li>Panna Cotta</li>
-                        <li>Tiramisu</li>
-                        <li>Zuccotto</li>
+                        <li>
+                            <span>Panna Cotta</span>
+                            <span>6€</span>
+                        </li>
+                        <li><span>Tiramisu</span>
+                            <span>8€</span>
+                        </li>
+                        <li>
+                            <span>Zuccotto</span>
+                            <span>10€</span>
+                        </li>
                     </ul>
                 </div>
             </div>
 
         </section>
-        <section class="service">
-            <h3>Nos Service</h3>
+        <section id="service">
+            <h3 class="font">Nos Service</h3>
             <div class="allService">
                 <div class="card">
                     <img src="./img/pizza-5349414_1920.jpg" alt="pizza">
@@ -90,18 +114,23 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
-            <h3>Nous Contacter</h3>
+        <section id="contact">
+            <h3 class="font">Nous Contacter</h3>
             <article>
                 <div class="text">
                     <p><i class="fa-solid fa-user"></i>Trattoria San Pietro</p>
                     <p><i class="fa-solid fa-location-dot"></i>Via S. Pietro, 95, <br> 35139 Padova PD, <br> Italie</p>
-                    <p><i class="fa-solid fa-mobile"></i><a href="tel+390498760330">390498760330</a></p>
+                    <p><i class="fa-solid fa-mobile"></i>+390498760330</p>
                 </div>
                 <img src="./img/map_restaurant.png" alt="map">
             </article>
         </section>
     </main>
+    <footer>
+        <h3 class="font">
+            designed by JdeDev 2021
+        </h3>
+    </footer>
 </body>
 
 </html>
