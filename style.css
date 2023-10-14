@@ -36,35 +36,39 @@ header ul{
     gap: 20px;
 }
 /*BANNIERE*/
-#banniere{
-    
+#banniere {
     width: 100%;
     color: white;
+    position: relative; 
 }
 
-#banniere img{
+#banniere img {
     width: 100%;
+    max-width: 100%; 
 }
 
-#banniere h2{
+#banniere h2 {
     font-size: 110px;
     position: absolute;
-    top: 27%; 
-    left: 48%; 
+    top: 30%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+    
 }
 
 #banniere button {
     background-color: #990000;
-    font-size: 52px;
+    font-size: 52px; 
     position: absolute;
     border-radius: 50px;
-    top: 69%;
+    top: 70%; 
     left: 50%;
-    padding: 20px;
+    padding: 15px 30px; 
     transform: translate(-50%, -50%);
-    width: 50%;
+    width: 50%; 
 }
+
 /* NOTRE CARTE*/
 
 
@@ -82,6 +86,7 @@ header ul{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-bottom: 50px;
 }
 
 #carte .card {
@@ -91,6 +96,10 @@ header ul{
 #carte .card img {
     width: auto;
     height: 250px;
+}
+
+#carte .font{
+    margin: 20px;
 }
 
 #carte .allCard .card ul {
@@ -112,10 +121,6 @@ header ul{
 }
 
 
-
-
-
-
 /*SERVICE*/
 #service{
     color: white;
@@ -124,7 +129,8 @@ header ul{
     border: solid 1px black;
 }
 #service h3{
-    font-size: 40px;
+    font-size: 85px;
+    margin: 0;
 }
 
 #service .allService{
@@ -209,7 +215,26 @@ header ul{
 footer{
     background-color: #990000;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
     border: solid 1px black;
+}
+
+footer h3{ 
+    margin: 0;
+}
+
+/* mobil*/
+
+@media screen and (max-width: 412px) {
+    #carte .allCard{
+        flex-direction: column;
+    }   
+    #service .allService{
+        flex-direction: column;
+    }
+    #contact article{
+        flex-direction: column;
+    }
+
 }
