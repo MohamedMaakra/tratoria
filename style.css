@@ -1,6 +1,6 @@
 body{
     margin: auto;
-    width: 1440px;
+    
     height: 780px;    
 }
 .font{
@@ -225,6 +225,15 @@ footer h3{
 }
 
 /* mobil*/
+
+@media screen and (max-width: 1440px){
+    body{
+    margin: auto;
+    width: 1440px;
+    height: 780px;    
+}
+}
+
 
 @media screen and (max-width: 412px) {
     #carte .allCard{
